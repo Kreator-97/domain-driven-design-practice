@@ -13,6 +13,10 @@ const UserSchema = new Schema({
   },
   description: {
     type: String,
+  },
+  uuid: {
+    type: String,
+    unique: true,
   }
 }, {
   timestamps: true
